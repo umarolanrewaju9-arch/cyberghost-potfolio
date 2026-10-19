@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar Olanrewaju — Cybersecurity Student & Web Developer</title>
+  <meta name="description" content="Portfolio of Umar Olanrewaju — Computer Science student in Nigeria building secure full-stack applications with FastAPI, Flask, and modern web tooling.">
+
+  <link rel="icon" href="./images/logo-icon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <div class="navcontainer">
+    <a href="#home" class="brand">
+      <img class="logo" src="./images/logo-icon.png" alt="Logo">
+      <span class="brand-name">Umar Olanrewaju<span>Cybersecurity &amp; Web Dev</span></span>
+    </a>
+
+    <ul class="nav-lists" id="navLists">
+      <li><a class="lists is-active" href="#home">Home</a></li>
+      <li><a class="lists" href="#skills">Skills</a></li>
+      <li><a class="lists" href="#projects">Projects</a></li>
+      <li><a class="lists" href="#services">Services</a></li>
+      <li><a class="lists" href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#contact"><button class="hire-me">Hire Me</button></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="status-pill"><span class="dot"></span> Open to internships &amp; freelance builds</div>
+
+        <h1>Building secure systems<br>one deploy at a <span class="accent">time.</span></h1>
+
+        <div class="hero-role">
+          Cybersecurity Student <span class="sep">/</span> Web Developer <span class="sep">/</span> Security Enthusiast
+        </div>
+
+        <p class="hero-p">
+          I'm Umar, a Cyber Security student in Nigeria building practical skills in secure
+          software development, application security, and networking — and shipping full-stack
+          apps while I do it.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="hero-btn primary">View My Projects</a>
+          <a href="#contact" class="hero-btn ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>8+</strong>full-stack projects shipped</div>
+          <div><strong>FastAPI · Flask</strong>primary backend stack</div>
+          <div><strong>Nigeria</strong>based, remote-friendly</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="./images/815e075890634063b3b7d293301df01ec2e767c3748a80936009c5d033161743.png" alt="Portrait of Umar Olanrewaju">
+        </div>
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <div class="terminal-body">
+            <div class="line"><span class="prompt">$</span> whoami</div>
+            <div class="line out">&gt; umar_olanrewaju</div>
+            <div class="line"><span class="prompt">$</span> stack --list</div>
+            <div class="line out">&gt; fastapi, flask, postgres, js</div>
+            <div class="line"><span class="prompt">$</span> status<span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-copy">
+        <div class="eyebrow">About</div>
+        <p>
+          I'm a <strong>computer science student</strong> currently working through coursework
+          like Computer Programming II and penetration testing, alongside systems analysis
+          and design training. Outside the classroom I build feature-complete web apps —
+          usually a FastAPI or Flask backend paired with a hand-built HTML/CSS/JS frontend —
+          and take on technical advisory roles for other people's projects.
+        </p>
+        <p>
+          I care about the security side of what I build: authentication, role-based access
+          control, and thinking through how a system fails before it ships. Most projects are
+          academic in origin, but I design and scope them like products with real users.
+        </p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat"><strong>FastAPI / Flask</strong><span>Backend of choice</span></div>
+        <div class="stat"><strong>RBAC + JWT</strong><span>Security-first auth</span></div>
+        <div class="stat"><strong>Render · Netlify</strong><span>Deployment targets</span></div>
+        <div class="stat"><strong>PythonAnywhere</strong><span>Deployment targets</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Skills</div>
+        <h2>Core languages &amp; the tools around them</h2>
+        <p>The four languages below carry most of my work end to end — from the backend
+          logic to the interface it powers.</p>
+      </div>
+
+      <div class="skills-row">
+        <div class="skill-card">
+          <img src="./images/html.png" alt="HTML">
+          <h5>HTML</h5>
+          <p>Semantic markup for every frontend I ship — accessible structure before styling.</p>
+        </div>
+        <div class="skill-card">
+          <img src="./images/css.png" alt="CSS">
+          <h5>CSS</h5>
+          <p>Hand-written layouts and responsive design, no framework required to make it look right.</p>
+        </div>
+        <div class="skill-card">
+          <img src="./images/javascipt.png" alt="JavaScript">
+          <h5>JavaScript</h5>
+          <p>Interactivity, form handling, and the client-side logic that connects to my APIs.</p>
+        </div>
+        <div class="skill-card">
+          <img src="./images/python.png" alt="Python">
+          <h5>Python</h5>
+          <p>FastAPI and Flask backends, data structures from scratch, and automation scripts.</p>
+        </div>
+      </div>
+
+      <div class="tools-label">Frameworks, infra &amp; tools I reach for</div>
+      <div class="tag-cloud">
+        <span class="tag">FastAPI</span>
+        <span class="tag">Flask</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">SQLite</span>
+        <span class="tag">Docker</span>
+        <span class="tag">JWT Auth</span>
+        <span class="tag">WebAuthn</span>
+        <span class="tag">RBAC</span>
+        <span class="tag">Paystack / Flutterwave</span>
+        <span class="tag">Termii SMS</span>
+        <span class="tag">Git &amp; GitHub</span>
+        <span class="tag">Render</span>
+        <span class="tag">Netlify</span>
+        <span class="tag">PythonAnywhere</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Projects</div>
+        <h2>Selected builds</h2>
+        <p>Mostly academic in origin, scoped and built like real products — full-stack apps
+          with real auth, real databases, and real deployments.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <h4>Cyventra Bank &amp; Financial Group</h4>
+            <span class="project-status live">Live demo</span>
+          </div>
+          <p>A feature-complete banking demo app built for academic submission — WebAuthn
+            biometric login, JWT auth, role-based access control, fraud detection, a transaction
+            PIN system, and Canvas-generated downloadable receipts.</p>
+          <div class="project-stack">
+            <span>FastAPI</span><span>PostgreSQL</span><span>SQLite</span><span>WebAuthn</span><span>JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="https://unique-macaron-94ec57.netlify.app" target="_blank" rel="noopener">Live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/umarolanrewaju9-arch/cyventra-bank" target="_blank" rel="noopener">GitHub <i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h4>TrustScore</h4>
+            <span class="project-status build">In architecture</span>
+          </div>
+          <p>A B2B SaaS trust-scoring API, positioned like a Stripe-for-trust: identity trust,
+            transaction trust, then merchant/vendor trust, built on a 6-month phased roadmap
+            with hard validation gates.</p>
+          <div class="project-stack">
+            <span>FastAPI</span><span>PostgreSQL</span><span>API design</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h4>HUMAHRS FUNDS</h4>
+            <span class="project-status">Academic build</span>
+          </div>
+          <p>A full-stack banking application with Paystack and Flutterwave payment integration
+            and Termii SMS notifications, containerized with Docker.</p>
+          <div class="project-stack">
+            <span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>Paystack</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h4>CareFlow</h4>
+            <span class="project-status">Academic build</span>
+          </div>
+          <p>A hospital ward management system, planned with a detailed SVG swim-lane
+            flowchart before a line of backend code was written.</p>
+          <div class="project-stack">
+            <span>Flask</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h4>ContactVault</h4>
+            <span class="project-status live">Live demo</span>
+          </div>
+          <p>An address book application with separate admin and user roles, deployed and
+            publicly accessible on PythonAnywhere.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Flask</span><span>RBAC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://olanrewajuumar.pythonanywhere.com" target="_blank" rel="noopener">Live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h4>Inventory &amp; POS System</h4>
+            <span class="project-status">COS 202 coursework</span>
+          </div>
+          <p>Built under a hard constraint — inventory managed through a custom Singly Linked
+            List in Python with no built-in lists, dicts, or databases. CSV persistence, heavy
+            OOP, and server-generated SVG illustrations in place of external image APIs.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Data structures</span><span>CSV</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="more-work">
+        <div class="more-work-label">Consulting &amp; documentation work</div>
+        <ul class="more-list">
+          <li>
+            <span class="m-title">PayFlow</span>
+            <span class="m-desc">A banking app interface inspired by OPay, focused on clean transaction flows.</span>
+          </li>
+          <li>
+            <span class="m-title">IgboGarri Connect</span>
+            <span class="m-desc">Marketplace platform SRS &amp; business plan for a rural Nigerian community — IEEE Std 830-compliant, 60+ functional requirements across ten modules.</span>
+          </li>
+          <li>
+            <span class="m-title">GarriSync Enterprises</span>
+            <span class="m-desc">Identified verified federal funding routes (SMEDAN ADEP, AGSMEIS, BOI RAPID) for a cassava/garri agribusiness and delivered a phased funding memo.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Services</div>
+        <h2>What I offer</h2>
+        <p>Whether it's a full build or a focused piece of it, here's where I add the most value.</p>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="caro-div">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/Web Design.png" class="d-block w-100" alt="Web design example">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Web Design &amp; Development</h5>
+                <p>Full-stack builds from database schema to the last pixel of the interface.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Branding.png" class="d-block w-100" alt="Branding example">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Branding &amp; Product Design</h5>
+                <p>Visual identity and product presentation that holds up outside a classroom.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/illustraions.png" class="d-block w-100" alt="UI and illustration example">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>UI/UX &amp; Illustration</h5>
+                <p>Interfaces designed around how the app is actually going to be used.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-copy">
+        <div>
+          <h5>Secure by default</h5>
+          <p>Auth, RBAC, and input handling considered from the start, not bolted on at the end.</p>
+        </div>
+        <div>
+          <h5>Deployed, not just demoed</h5>
+          <p>Every build ships to a real URL on Render, Netlify, or PythonAnywhere.</p>
+        </div>
+        <div>
+          <h5>Documented properly</h5>
+          <p>Flowcharts, SRS documents, and presentation decks alongside the code when it matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-info">
+        <div class="eyebrow">Contact</div>
+        <h2>Let's build something secure.</h2>
+        <p>Have a project, an internship, or a technical advisory role in mind? I'm currently
+          open to new work — reach out and I'll get back to you.</p>
+
+        <div class="contact-channels">
+          <a class="channel" href="mailto:your.email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><strong>your.email@example.com</strong></div>
+          </a>
+          <a class="channel" href="https://github.com/umarolanrewaju9-arch" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <div><span>GitHub</span><strong>umarolanrewaju9-arch</strong></div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="What are you looking to build?" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+        <p class="form-note">Opens your email client with this message pre-filled.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Umar Olanrewaju. Built with HTML, CSS &amp; JavaScript.</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
